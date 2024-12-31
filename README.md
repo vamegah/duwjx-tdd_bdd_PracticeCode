@@ -65,3 +65,19 @@ Then exit that terminal and open a new one to activate the virtual environment.
 [John Rofrano](https://www.linkedin.com/in/JohnRofrano/), Senior Technical Staff Member, DevOps Champion, @ IBM Research
 
 ## <h3 align="center"> © IBM Corporation 2022, 2023. All rights reserved. <h3/>
+
+## Review of Test Fixtures
+def setUpModule():             # runs once before any tests
+def tearDownModule():          # runs once after all tests
+
+class MyTestCases(TestCase):   # the start of a test case
+
+    @classmethod
+    def setUpClass(cls):       # runs once before test case
+
+    @classmethod
+    def tearDownClass(cls):    # runs once after test case
+
+    def setUp(self):           # runs before each test
+
+    def tearDown(self):        # runs after each test
